@@ -8,16 +8,26 @@ public class CalculatorExample {
 		int num = scanner.nextInt();
 		System.out.println(num);
 		
+		System.out.print("»çÄ¢¿¬»ê ±âÈ£ :");
+		String sybom = scanner.next();
+		System.out.println(sybom);
+		
 		System.out.print("µÎ ¹øÂ° ÀÔ·Â °ª: ");
 		int num1 = scanner.nextInt();
 		System.out.println(num1);
 		
-		System.out.printf("µ¡¼À : %d + %d = %d\n",num, num1,(num+num1));
-		System.out.printf("–E¼À : %d - %d = %d\n",num, num1,(num-num1));
-		System.out.printf("°öÇÏ±â :%d * %d = %d\n",num, num1,(num*num1));
-		System.out.printf("³ª´°¼À :%d / %d = %d\n",num, num1,(num/num1));
+		if(sybom.equals("+")) {
+			System.out.printf("µ¡¼À : %d + %d = %d\n",num, num1,(num+num1));
+		} else if(sybom.equals("-")) {
+			System.out.printf("–E¼À : %d - %d = %d\n",num, num1,(num-num1));			
+		} else if(sybom.equals("*")) {
+			System.out.printf("°öÇÏ±â :%d * %d = %d\n",num, num1,(num*num1));			
+		} else if(sybom.equals("/")) {
+			System.out.printf("³ª´°¼À :%d / %d = %d\n",num, num1,(num/num1));
+		} else {
+			System.out.println("»çÄ¢ ¿¬»ê ±âÈ£°¡ ¾Æ´Õ´Ï´Ù.");
+		}
 		
-
 	}
 
 }
