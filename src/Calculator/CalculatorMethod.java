@@ -1,7 +1,7 @@
 package Calculator;
 
 import java.util.Scanner;
-
+//메소드를 이용한 계산기 만들기
 public class CalculatorMethod {
 	static int getFirstValue(Scanner scanner) {
 		System.out.print("첫 번째 입력 값: ");
