@@ -1,7 +1,7 @@
 package Calculator;
 
 import java.util.Scanner;
-
+//입력을 통한계산기 만들기
 public class CalulatorExample {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
